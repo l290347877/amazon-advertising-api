@@ -310,7 +310,8 @@ module.exports = class AdvertisingClient {
             url: location,
             headers: headers,
             followRedirect: false,
-            gzip: true
+            gzip: true,
+            encoding: null
         }
 
         return this._executeRequest(requestOptions);
